@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Formulário</title>
+
+        <link rel="stylesheet" href="formulario.css" type="text/css" media="screen">
+    </head>
+
+    <body>
+
+        <div>
+            <h1 id="titulo">Formulário CS:GO</h1>
+            <p id="subtitulo">Complete suas informações:</p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" autocomplete="off" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" autocomplete="off" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="nick"><strong>Nick na steam:</strong></label>
+                <input type="text" name="nick" id="nick" autocomplete="off" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Qual resolução você usa?</strong></label>
+                <label>
+                    <input type="radio" name="res" value="4:3" checked>4:3
+                </label>
+                <label>
+                    <input type="radio" name="res" value="16:9">16:9
+                </label>
+                <label>
+                    <input type="radio" name="res" value="16:10">16:10
+                </label>
+                <label>
+                    <input type="radio" name="res" value="outra">Outra
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="rank"><strong>Qual sua patente?</strong></label>
+                <select name="rank" id="rank" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Nada">Sem rank</option>
+                    <option value="Prata">Prata</option>
+                    <option value="Ouro">Ouro</option>
+                    <option value="Ak">Ak</option>
+                    <option value="Aguia">Águia</option>
+                    <option value="Supremo">Supremo</option>
+                    <option value="Global">Global</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <label><strong>Qual/Quais times brasileiros você torce?</strong></label><br><br>
+                <div id="check">
+                    <input type="checkbox" id="plano" name="plano" value="plano">
+                    <label for="plano">O Plano</label>
+                    <input type="checkbox" id="bt" name="bt" value="bt">
+                    <label for="bt">Seleça do BT</label>
+                    <input type="checkbox" id="furia" name="furia" value="furia">
+                    <label for="furia">Furia</label>
+                    <input type="checkbox" id="imperial" name="imperial" value="imperial">
+                    <label for="imperial">Imperial</label>
+                    <input type="checkbox" id="case" name="case" value="case">
+                    <label for="case">Case</label>
+                    <input type="checkbox" id="fluxo" name="fluxo" value="fluxo">
+                    <label for="fluxo">Fluxo</label>
+                    <input type="checkbox" id="mibr" name="mibr" value="mibr">
+                    <label for="mibr">Mibr</label>
+                    <input type="checkbox" id="nation" name="nation" value="nation">
+                    <label for="nation">00nation</label>
+                    <input type="checkbox" id="pain" name="pain" value="pain">
+                    <label for="pain">Pain</label>
+                    <input type="checkbox" id="tone" name="tone" value="tone">
+                    <label for="tone">TeamOne</label>
+                    <input type="checkbox" id="corinthians" name="corinthians" value="corinthians">
+                    <label for="corinthians">Corinthians</label>
+                    <input type="checkbox" id="los" name="los" value="los">
+                    <label for="los">LosGrandes</label>
+                    <input type="checkbox" id="outro" name="outro" value="outro">
+                    <label for="outro">Outro(s)</label>
+                    <input type="checkbox" id="nenhum" name="nenhum" value="nenhum">
+                    <label for="nenhum">Nenhum</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label for="expectativa"><strong>Expectativas para o major no brasil:</strong></label>
+                <textarea rows="6" style="width: 26em" id="expectativa" name="expectativa"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Enviar</button>
+        </form>
+    </body>
+</html>
